@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>IntroCard</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <div class="centerMe">
+      <h1>Welcome to IntroCard!</h1>
+      <br>
+      <br>
+      <button onclick="window.location='friends.html'">Friends</button>
+      <br>
+      <br>
+      <button id="help" onclick="openHelpModal()">How To Use</button>
+      <!-- The Help Modal -->
+      <div id="helpmodal" class="modal" onclick="closeHelpModal()">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeHelpModal()">&times;</span>
+          <iframe src="help.html" frameborder="0"></iframe>
+        </div>
+      </div>
+      <br>
+      <br>
+      <button onclick="window.location='signup.html'">Sign Up</button>
+      <br>
+      <br>
+      <button onclick="window.location='login.html'">Log In</button>
+    </div>
+  </body>
+</html>
