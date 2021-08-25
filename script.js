@@ -5,10 +5,16 @@ Figure out the layout
 Make the website look good for all screen sizes
 Make Friends button only visible when the user is logged in
 Make other buttons not move when one is hovered over
+Add a back to index.html button for each page
+Add turbolinks?
+Make it so that there's an "add account" button instead of automatically adding more inputs when the password input is clicked on when on the sign up page
 
-introcard.com/jaxatax
+Set up a VM
+
+Example user page URL (hopefully): introcard.com/jaxatax
 */
 
+/*
 var passwordInputClicked = false;
 function onPasswordInputClick() {
   if (!passwordInputClicked) {
@@ -16,6 +22,7 @@ function onPasswordInputClick() {
     passwordInputClicked = true;
   }
 }
+*/
 
 function makeNewInput() {
   var formdiv = document.getElementById("formdiv");
@@ -27,7 +34,7 @@ function makeNewInput() {
   formdiv.appendChild(br);
   
   var accountType = document.createElement("INPUT");
-  accountType.placeholder = "Other Account";
+  accountType.placeholder = "Account Service";
   // adds the fadeIn class to the accountType classList
   accountType.classList.add("fadeIn");
   formdiv.appendChild(accountType);
@@ -43,7 +50,7 @@ function makeNewInput() {
       accountInfo.clickedOn = true;
     }
   };
-  accountInfo.placeholder = "Account Username/Handle";
+  accountInfo.placeholder = "Account Username";
   // adds the fadeIn class to the accountInfo classList
   accountInfo.classList.add("fadeIn");
   formdiv.appendChild(accountInfo);
