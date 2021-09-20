@@ -1,5 +1,11 @@
 /*
 To do:
+
+Major list:
+Make a database
+Make the website send the account creation data back to the server
+
+Minor list:
 Find a color scheme, possibly: https://coolors.co/06aed5-086788-ffffff-62c370-090c08
 Figure out the layout
 Make the website look good for all screen sizes
@@ -8,6 +14,7 @@ Make other buttons not move when one is hovered over
 Add a back to index.html button for each page
 Add turbolinks?
 Make it so that there's an "add account" button instead of automatically adding more inputs when the password input is clicked on when on the sign up page
+Hash passwords before sending them to the server
 
 Set up a VM
 
@@ -43,6 +50,7 @@ function makeNewInput() {
   formdiv.appendChild(br);
 
   var accountInfo = document.createElement("INPUT");
+  /*
   accountInfo.clickedOn = false;
   accountInfo.onfocus = function() {
     if (!accountInfo.clickedOn) {
@@ -50,6 +58,7 @@ function makeNewInput() {
       accountInfo.clickedOn = true;
     }
   };
+  */
   accountInfo.placeholder = "Account Username";
   // adds the fadeIn class to the accountInfo classList
   accountInfo.classList.add("fadeIn");
